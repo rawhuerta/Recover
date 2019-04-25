@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatec</title>
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo-inventario.css">
+    <script src="scripts.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="centre">
+        <p id="usuario">A01234567</p>
+        <h1 id="simbolo-usuario">L</h1>
+      </div>
+    </nav>
+
+    <section>
+      <div class="centre">
+        <!--Los articulos van dentro del div con clase centre-->
+        <a href="#"><div class="articulo">
+          <img src="../../../Pictures/Cargo.jpg">
+          <div class="art-info">
+            <h4>Mochila animalitos</h4>
+            <p>21/04/2019 12:11</p>
+          </div>
+        </div></a>
+
+        <div class="articulo">
+          <img src="../../../Pictures/Cargo.jpg">
+          <div class="art-info">
+            <h4>Mochila animalitos</h4>
+            <p>21/04/2019 12:11</p>
+          </div>
+        </div>
+
+        <div class="articulo">
+          <img src="../../../Pictures/Cargo.jpg">
+          <div class="art-info">
+            <h4>Mochila animalitos</h4>
+            <p>21/04/2019 12:11</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.getElementById("usuario").innerHTML = localStorage.getItem("usuario");
+    </script>
+  </body>
+</html>
