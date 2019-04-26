@@ -1,4 +1,5 @@
 function registrarUsuario() {
+  if (document.getElementById("user").value.length > 0) {
   const pass = document.getElementById("password1").value;
   if (document.getElementById("password2").value === pass) {
     let usuarios = localStorage.getItem("usuarios");
@@ -18,6 +19,10 @@ function registrarUsuario() {
     document.getElementsByClassName("error")[0].classList.remove("ocultar");
     return false;
   }
+ } else {
+   document.getElementsByClassName("error")[1].classList.remove("ocultar");
+   return false;
+ }
 }
 
 function buscarUsuario() {
