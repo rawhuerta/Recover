@@ -1,0 +1,115 @@
+body {
+  background-color: hsl(208, 99%, 50%);
+}
+
+img {
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 0.8rem;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagenes, .descripcion {
+  box-sizing: border-box;
+}
+
+.imagenes {
+  width: 65%;
+}
+
+.descripcion {
+  width: 35%;
+}
+
+.img-grande {
+  width: 70%;
+  max-width: 500px;
+  min-width: 230px;
+  margin: 0 auto;
+}
+
+.menu-img {
+  display: flex;
+  justify-content: center;
+  height: 147px;
+  padding-bottom: 7px;
+  margin-top: 0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.menu-img::-webkit-scrollbar {
+  height: 7px;
+}
+
+.menu-img::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.menu-img::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.menu-img::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.img-chica {
+  display: inline-block;
+  height: 140px;
+  border-width: 3px;
+  border-style: solid;
+  margin-right: 5px;
+}
+
+.seleccion {
+  border-color: #ff0;
+}
+
+.btn {
+  text-align: center;
+  background-color: #2874ff;
+  display: block;
+  width: 150px;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  color: #2874ff;
+  background-color: white;
+}
+
+.img-grande img {
+  width: 100%;
+}
+
+.img-chica img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .imagenes, .descripcion {
+    width: 100%;
+  }
+
+  .descripcion {
+    margin-top: 1rem;
+  }
+
+  .centre {
+    margin: 0 10px;
+  }
+}

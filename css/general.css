@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   font-family: Verdana, sans-serif;
+  color: #fff;
 }
 
 html {
@@ -14,7 +15,37 @@ h1 {
   text-align: center;
 }
 
+nav {
+  background-color: rgb(1, 85, 157);
+  padding: 0.4rem 0;
+}
+
+nav .centre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .centre {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+#usuario {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+#simbolo-usuario, #usuario {
+  color: #fff;
+}
+
+#simbolo-usuario {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgb(107, 188, 254);
+  margin: 0 10px;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 100%;
 }

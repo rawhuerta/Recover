@@ -6,7 +6,6 @@
     <title>Locatec</title>
     <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/estilo-inventario.css">
-    <script src="scripts.js" charset="utf-8" defer></script>
   </head>
   <body>
     <nav>
@@ -19,33 +18,44 @@
     <section>
       <div class="centre">
         <!--Los articulos van dentro del div con clase centre-->
-        <a href="#"><div class="articulo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Herschel_Supply_Co._backpack.jpg">
-          <div class="art-info">
-            <h4>Mochila animalitos</h4>
-            <p>21/04/2019 12:11</p>
+        <a href="detalle.html" id="1">
+          <div class="articulo">
+            <div class="imagen" style="background-image: url(https://www.lumen.com.mx/Content/Images/productPics/261087.jpg)"></div>
+            <div class="art-info">
+              <h4>Mochila aguacate</h4>
+              <p>21/04/2019 12:11</p>
+            </div>
           </div>
-        </div></a>
+        </a>
 
-        <div class="articulo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Herschel_Supply_Co._backpack.jpg">
-          <div class="art-info">
-            <h4>Mochila animalitos</h4>
-            <p>21/04/2019 12:11</p>
+        <a href="detalle.html" id="1">
+          <div class="articulo">
+            <div class="imagen" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c6/Herschel_Supply_Co._backpack.jpg);"></div>
+            <div class="art-info">
+              <h4>Mochila azul</h4>
+              <p>21/04/2019 12:11</p>
+            </div>
           </div>
-        </div>
+        </a>
 
-        <div class="articulo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Herschel_Supply_Co._backpack.jpg">
-          <div class="art-info">
-            <h4>Mochila animalitos</h4>
-            <p>21/04/2019 12:11</p>
+        <a href="detalle.html" id="1">
+          <div class="articulo">
+            <div class="imagen" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/file_d2a0ef45.jpeg)"></div>
+            <div class="art-info")">
+              <h4>Mochila animalitos</h4>
+              <p>21/04/2019 12:11</p>
+            </div>
           </div>
-        </div>
+        </a>
+
       </div>
     </section>
+    <script src="scripts.js" charset="utf-8"></script>
     <script type="text/javascript">
       document.getElementById("usuario").innerHTML = localStorage.getItem("usuario");
+      Array.from(document.getElementsByTagName('a')).forEach(function (element, indice) {
+        element.id = indice + 1;
+      });
     </script>
   </body>
 </html>

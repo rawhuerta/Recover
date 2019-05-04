@@ -52,3 +52,11 @@ function buscarUsuario() {
     return false;
   }
 }
+
+function cambiarFoto(e) {
+  Array.from(document.getElementsByClassName("img-chica")).forEach(function(element){
+    element.classList.remove("seleccion");
+  });
+  e.currentTarget.classList.add("seleccion");
+  document.getElementById("big-image").src = e.target.src;
+}
