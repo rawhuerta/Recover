@@ -7,7 +7,7 @@ img {
 h4 {
   font-size: 1.25rem;
   font-weight: normal;
-  color: #12a9e2;
+  color: #ddd;
 }
 
 p {
@@ -26,11 +26,15 @@ section .centre {
 }
 
 .azul-oscuro {
-  background-color: #000080;
+  background-color: #0cb7f2;
+}
+
+.azul-muy-oscuro {
+  background-color: #0087d1;
 }
 
 .azul-mas-oscuro {
-  background-color: #083791;
+  background-color: #091f92;
 }
 
 .articulo {
@@ -53,7 +57,6 @@ section .centre {
   background-repeat: no-repeat;
   background-size: contain;
   width: 48%;
-
   height: 220px;
 }
 
@@ -74,7 +77,15 @@ section .centre {
 }
 
 @media screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+  
   .articulo {
     width: 100vw;
+  }
+
+  .imagen {
+    height: 45vw;
   }
 }

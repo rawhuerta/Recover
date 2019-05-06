@@ -47,6 +47,10 @@ label {
   display: none;
 }
 
+.container-inputs img {
+  max-width: 30vh;
+}
+
 #submit {
   font-size: 1rem;
   font-weight: bold;
