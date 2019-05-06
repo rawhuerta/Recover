@@ -19,7 +19,7 @@ label {
   text-align: center;
   text-decoration: underline;
   display: block;
-  color: #51cbff;
+  color: #000080;
   margin: 1rem auto;
 }
 
@@ -52,6 +52,7 @@ label {
   font-weight: bold;
   text-align: center;
   color: #fff;
+  background-color: #888;
   display: block;
   width: 170px;
   padding: 0.75rem 1.5rem;

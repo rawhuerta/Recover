@@ -10,9 +10,17 @@ html {
   font-size: 20px;
 }
 
+body {
+  background-color: #0ff;
+}
+
 h1 {
   font-size: 2rem;
   text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 nav {

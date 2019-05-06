@@ -19,7 +19,7 @@
       <div class="centre">
         <!--Los articulos van dentro del div con clase centre-->
         <a href="detalle.html" id="1">
-          <div class="articulo">
+          <div class="articulo azul-oscuro">
             <div class="imagen" style="background-image: url(https://www.lumen.com.mx/Content/Images/productPics/261087.jpg)"></div>
             <div class="art-info">
               <h4>Mochila aguacate</h4>
@@ -29,7 +29,7 @@
         </a>
 
         <a href="detalle.html" id="1">
-          <div class="articulo">
+          <div class="articulo azul-mas-oscuro">
             <div class="imagen" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c6/Herschel_Supply_Co._backpack.jpg);"></div>
             <div class="art-info">
               <h4>Mochila azul</h4>
@@ -39,9 +39,9 @@
         </a>
 
         <a href="detalle.html" id="1">
-          <div class="articulo">
+          <div class="articulo azul-oscuro">
             <div class="imagen" style="background-image: url(https://lumiere-a.akamaihd.net/v1/images/file_d2a0ef45.jpeg)"></div>
-            <div class="art-info")">
+            <div class="art-info">
               <h4>Mochila animalitos</h4>
               <p>21/04/2019 12:11</p>
             </div>
@@ -55,6 +55,11 @@
       document.getElementById("usuario").innerHTML = localStorage.getItem("usuario");
       Array.from(document.getElementsByTagName('a')).forEach(function (element, indice) {
         element.id = indice + 1;
+        /*if (indice%2 == 0) {
+          element.firstChild.classList.add("azul-oscuro");
+        } else {
+          element.firstChild.classList.add("azul-mas-oscuro");
+        }*/
       });
     </script>
   </body>

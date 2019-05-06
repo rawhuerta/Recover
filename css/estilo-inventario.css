@@ -15,7 +15,7 @@ p {
 }
 
 section {
-  background-color: #083791;
+
 }
 
 section .centre {
@@ -23,6 +23,14 @@ section .centre {
   max-width: 1000px;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.azul-oscuro {
+  background-color: #000080;
+}
+
+.azul-mas-oscuro {
+  background-color: #083791;
 }
 
 .articulo {
